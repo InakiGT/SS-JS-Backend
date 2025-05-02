@@ -253,6 +253,7 @@ const seedPIS = [
 
 async function seed() {
     try {
+        console.log('INTENTANTO CONECTAR A LA DB: ', MONGO_URI)
         mongoose.connect(MONGO_URI)
         console.log('DB CONECTADA')
 
