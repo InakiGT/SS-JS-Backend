@@ -5,7 +5,9 @@ import passport from 'passport'
 const userRouter = Router()
 const userService = new UserService()
 
-userRouter.get('/', async (req, res) => {
+userRouter.get('/',
+    passport.authenticate('jwt', { session: false }),
+    async (req, res) => {
     try {
         const users = await userService.getUsers()
         res

@@ -77,7 +77,7 @@ function GeneralRouter(model, servicename) {
             try {
                 const { params, body } = req
                 const { id } = params
-
+                
                 const response = await service.updateItem(id, body)
                 res
                     .status(204)

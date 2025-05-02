@@ -4,15 +4,15 @@ export const ImpactoSocialSchema = new Schema({
     title: String,
     img: String,
     subtitle: String,
-    content: {
+    content: [{
         link: String,
         creator: String,
-        content: String,
-        technologies: [String],
+        content: [],
+        technologies: String,
         perks: [
             { title: String, description: String }
         ]
-    }
+    }]
 })
 
 export const ImpactoSocial = model('ProyectosImpactoSocial', ImpactoSocialSchema)
