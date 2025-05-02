@@ -7,7 +7,6 @@ function GeneralRouter(model, servicename) {
     const service = new GeneralService(model, servicename)
 
     router.get('/',
-        passport.authenticate('jwt', { session: false }),
         async (req, res) => {
             try {
                 const response = await service.getItems()
@@ -27,7 +26,6 @@ function GeneralRouter(model, servicename) {
     })
 
     router.get('/:id',
-        passport.authenticate('jwt', { session: false }),
         async (req, res) => {
             try {
                 const { params } = req
