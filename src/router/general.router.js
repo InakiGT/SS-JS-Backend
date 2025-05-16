@@ -52,8 +52,9 @@ function GeneralRouter(model, servicename) {
         async (req, res) => {
             try {
                 const { body } = req
+                console.log(body)
                 const response = await service.createItem(body)
-
+                console.log(response)
                 res
                     .status(201)
                     .json({
