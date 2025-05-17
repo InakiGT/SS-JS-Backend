@@ -8,7 +8,8 @@
     "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js",
     "db:seed": "node ./src/db/seeds/seed.js",
-    "db:seed:material": "node ./src/db/seeds/material.seed.js"
+    "db:seed:material": "node ./src/db/seeds/material.seed.js",
+    "db:seed:pt": "node ./src/db/seeds/pt.seed.js"
   },
   "keywords": [],
   "author": "",
