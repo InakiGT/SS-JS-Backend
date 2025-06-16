@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
-import { ImpactoSocial } from '../schemas/impactoSocial.schema'
+import { ImpactoSocial } from '../schemas/impactoSocial.schema.js'
 
 dotenv.config()
 
